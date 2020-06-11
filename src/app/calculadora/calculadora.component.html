@@ -1,0 +1,25 @@
+<div class="calculadora"> 
+    <div class="calculos-y-resultado">
+        <input type="text" [value]="texto">
+        <!-- <p>{{texto}}</p> -->
+    </div>
+    <ul class="teclas">
+        <li class="tecla tecla--num" (click)="pillarValorTecla('1')">1</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('2')">2</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('3')">3</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('4')">4</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('5')">5</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('6')">6</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('7')">7</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('8')">8</li>
+        <li class="tecla tecla--num" (click)="pillarValorTecla('9')">9</li>
+        <li class="tecla tecla--zero" (click)="pillarValorZero('0')">0</li>
+        <li class="tecla tecla--c" (click)="freset()">C</li> 
+        <li class="tecla tecla--sign" (click)="pillarValorSign('+')">+</li>
+        <li class="tecla tecla--sign" (click)="pillarValorSign('-')">-</li>
+        <li class="tecla tecla--sign" (click)="pillarValorSign('*')">*</li>
+        <li class="tecla tecla--sign" (click)="pillarValorSign('/')">/</li>
+        <li class="tecla tecla--equal tecla--full" (click)="calcular()">=</li>
+    </ul>
+
+</div>
